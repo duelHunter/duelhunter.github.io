@@ -3,6 +3,7 @@ const systemLoader = document.getElementById('systemLoader');
 
 function initSystemLoader() {
     // Hide loader after animation completes
+    if (!systemLoader) return;
     setTimeout(() => {
         systemLoader.classList.add('hidden');
         document.body.style.overflow = 'auto';

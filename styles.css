@@ -629,6 +629,16 @@ section {
     margin: 0 auto;
 }
 
+.projects-more {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.all-projects {
+    padding-top: 8rem;
+    min-height: 100vh;
+}
+
 .project-card {
     background: var(--bg-tertiary);
     border: 1px solid var(--border-color);
