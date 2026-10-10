@@ -123,8 +123,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Intersection Observer for fade-in animations
 const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: 0,
+    rootMargin: '0px 0px 150px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -132,6 +132,7 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
             entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
@@ -140,10 +141,10 @@ const observer = new IntersectionObserver((entries) => {
 document.addEventListener('DOMContentLoaded', () => {
     const animateElements = document.querySelectorAll('.skill-card, .project-card, .stat-item, .contact-item');
     
-    animateElements.forEach((el, index) => {
+    animateElements.forEach((el) => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
-        el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+        el.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
         observer.observe(el);
     });
 });
