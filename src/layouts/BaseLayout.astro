@@ -1,0 +1,92 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  home?: boolean;
+  active?: string;
+}
+
+const {
+  title,
+  description = 'Lahiru Senarathna - Cyber Security Specialist | Portfolio',
+  home = false,
+  active = '',
+} = Astro.props;
+
+const base = home ? '' : '/';
+const links = [
+  { id: 'home', label: 'HOME' },
+  { id: 'about', label: 'ABOUT' },
+  { id: 'skills', label: 'SKILLS' },
+  { id: 'projects', label: 'PROJECTS' },
+  { id: 'contact', label: 'CONTACT' },
+];
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content={description}>
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    {home && (
+      <div class="system-loader" id="systemLoader">
+          <div class="loader-content">
+              <div class="system-status-box">
+                  <div class="status-indicator-large"></div>
+                  <div class="status-text-large">SYSTEM_INITIALIZING</div>
+                  <div class="status-bar">
+                      <div class="status-progress"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    )}
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href={`${base}#home`} class="logo">
+                    <span class="logo-bracket">&lt;</span>LS<span class="logo-bracket">/&gt;</span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    {links.map((l, i) => (
+                      <li>
+                        <a href={`${base}#${l.id}`} class:list={['nav-link', { active: active === l.id }]}>
+                          <span class="nav-code">[{String(i + 1).padStart(2, '0')}]</span> {l.label}
+                        </a>
+                      </li>
+                    ))}
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <slot />
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-line">© {new Date().getFullYear()} Lahiru Senarathna. All rights reserved.</p>
+            <p class="footer-line">Built with security in mind</p>
+        </div>
+    </footer>
+
+    <script>
+      import '../scripts/main.js';
+    </script>
+</body>
+</html>

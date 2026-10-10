@@ -1011,3 +1011,99 @@ section {
     }
 
 }
+/* Project cards: title link */
+.project-title-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-title-link:hover {
+    color: var(--accent-red);
+}
+
+/* Project detail page */
+.project-detail {
+    padding-top: 8rem;
+    min-height: 100vh;
+    background: var(--bg-primary);
+}
+
+.project-detail .container {
+    max-width: 800px;
+}
+
+.back-link {
+    margin-bottom: 2rem;
+}
+
+.detail-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    margin: 1.5rem 0 1rem;
+}
+
+.detail-summary {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.detail-links {
+    margin: 1.5rem 0 2.5rem;
+}
+
+.prose {
+    border-top: 1px solid var(--border-color);
+    padding-top: 2rem;
+    line-height: 1.8;
+}
+
+.prose h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--accent-red);
+    font-size: 1.3rem;
+    margin: 2rem 0 0.75rem;
+}
+
+.prose p,
+.prose li {
+    color: var(--text-secondary);
+}
+
+.prose p {
+    margin-bottom: 1rem;
+}
+
+.prose ul,
+.prose ol {
+    margin: 0 0 1rem 1.5rem;
+}
+
+.prose a {
+    color: var(--accent-red);
+}
+
+.prose img {
+    max-width: 100%;
+    border: 1px solid var(--border-color);
+    margin: 1rem 0;
+}
+
+.prose code {
+    background: var(--bg-tertiary);
+    padding: 0.1rem 0.4rem;
+    border: 1px solid var(--border-color);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.prose pre {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+.prose pre code {
+    border: none;
+    padding: 0;
+}

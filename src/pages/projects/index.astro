@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+
+const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+---
+<BaseLayout title="Projects | Lahiru Senarathna" active="projects">
+    <section id="projects" class="projects all-projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-code">[04]</span> ALL_PROJECTS
+            </h2>
+            <div class="projects-grid">
+                {projects.map((p, i) => (
+                  <ProjectCard
+                    index={i + 1}
+                    slug={p.id}
+                    title={p.data.title}
+                    summary={p.data.summary}
+                    tags={p.data.tags}
+                    demo={p.data.demo}
+                    code={p.data.code}
+                  />
+                ))}
+            </div>
+            <div class="projects-more">
+                <a href="/#projects" class="btn btn-secondary">&lt; BACK_TO_HOME</a>
+            </div>
+        </div>
+    </section>
+</BaseLayout>
