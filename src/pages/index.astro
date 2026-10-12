@@ -7,7 +7,7 @@ const featured = (await getCollection('projects'))
   .filter((p) => p.data.featured)
   .sort((a, b) => a.data.order - b.data.order);
 ---
-<BaseLayout title="Lahiru Senarathna | Cyber Security Portfolio" home>
+<BaseLayout title="Lahiru Senarathna | AI Automation Engineer" home>
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="grid-overlay"></div>
@@ -22,7 +22,8 @@ const featured = (await getCollection('projects'))
                         <span class="hero-name" id="typingText"></span>
                         <span class="cursor-blink">_</span>
                     </h1>
-                    <p class="hero-subtitle">Cyber Security Specialist</p>
+                    <p class="hero-subtitle has-tagline">AI Automation Engineer</p>
+                    <p class="hero-tagline">DevOps | Cyber Security | Networking Enthusiast</p>
                     <div class="hero-description">
                         <p>Passionate developer creating innovative solutions to real-world challenges.</p>
                         <p>Specialized in full-stack development, automation, and building scalable applications.</p>

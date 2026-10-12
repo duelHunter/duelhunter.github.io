@@ -318,6 +318,18 @@ body {
     text-transform: uppercase;
 }
 
+.hero-subtitle.has-tagline {
+    margin-bottom: 0.5rem;
+}
+
+.hero-tagline {
+    font-family: var(--font-mono, 'JetBrains Mono', monospace);
+    font-size: 1rem;
+    color: var(--accent-red);
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
 .hero-description {
     margin-bottom: 2rem;
     font-family: var(--font-mono);
