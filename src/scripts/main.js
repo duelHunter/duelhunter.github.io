@@ -279,7 +279,7 @@ window.addEventListener('load', () => {
 // Console message
 console.log('%c[SYSTEM] Access granted', 'color: #ff0000; font-size: 16px; font-weight: bold;');
 console.log('%cWelcome to the system. All protocols active.', 'color: #b0b0b0; font-size: 12px;');
-console.log('%cBuilt with security in mind by Lahiru Senarathna', 'color: #666666; font-size: 10px;');
+console.log('%cBuilt by Lahiru Senarathna', 'color: #666666; font-size: 10px;');
 
 // Add glitch effect on hover for logo (optional enhancement)
 const logo = document.querySelector('.logo');
