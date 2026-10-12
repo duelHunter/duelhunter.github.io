@@ -2,7 +2,7 @@
 title: "Research Assistant Agent"
 summary: "ReAct-pattern research agent built with LangChain and Google Gemini that searches, calculates and cites its sources."
 tags: ["Python", "LangChain", "Gemini", "AI Agents"]
-order: 7
+order: 9
 featured: false
 code: "https://github.com/duelHunter/Research-Assistant-Agent"
 ---

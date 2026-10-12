@@ -2,8 +2,8 @@
 title: "Blockchain Document Verification"
 summary: "Decentralized system that stores documents in IPFS and records their content identifiers on Hyperledger Fabric to detect tampering."
 tags: ["Hyperledger Fabric", "IPFS", "Node.js", "Blockchain", "Security"]
-order: 4
-featured: true
+order: 7
+featured: false
 code: "https://github.com/duelHunter/blockchain-document-verification"
 ---
 

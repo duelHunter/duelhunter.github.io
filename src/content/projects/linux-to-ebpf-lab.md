@@ -2,8 +2,8 @@
 title: "Linux to eBPF Systems Lab"
 summary: "Hands-on learning lab that goes from Linux fundamentals to kernel observability with eBPF, with experiments and scripts."
 tags: ["Linux", "eBPF", "Observability", "Docker"]
-order: 8
-featured: false
+order: 3
+featured: true
 code: "https://github.com/duelHunter/linux-to-eBPF-lab"
 ---
 

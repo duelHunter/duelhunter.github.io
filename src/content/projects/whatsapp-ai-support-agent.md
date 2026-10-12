@@ -2,7 +2,7 @@
 title: "WhatsApp AI Support Agent"
 summary: "Self-hosted WhatsApp customer support and ordering automation powered by an LLM, with RAG and a multi-tenant admin dashboard."
 tags: ["Node.js", "Next.js", "TypeScript", "Supabase", "RAG"]
-order: 1
+order: 2
 featured: true
 code: "https://github.com/duelHunter/whatsapp-agent-support"
 ---

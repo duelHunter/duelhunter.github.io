@@ -2,7 +2,7 @@
 title: "Cloud-Native Hotel Booking System"
 summary: "Microservices platform for searching hotels, booking rooms and paying, built twice to compare broker-based and direct-call communication."
 tags: ["Microservices", "RabbitMQ", "Next.js", "Docker"]
-order: 3
+order: 4
 featured: true
 code: "https://github.com/duelHunter/microservice-hotelbooking"
 ---

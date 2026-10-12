@@ -2,7 +2,7 @@
 title: "TransitLK - Public Transport Platform"
 summary: "Microservices prototype for ticketing with QR e-tickets and live vehicle tracking, behind a Kong API gateway."
 tags: ["Spring Boot", "NestJS", "Kafka", "Kong", "Docker"]
-order: 2
+order: 6
 featured: true
 code: "https://github.com/duelHunter/TransitLK"
 ---

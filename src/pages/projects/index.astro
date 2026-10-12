@@ -21,6 +21,7 @@ const projects = (await getCollection('projects')).sort((a, b) => a.data.order -
                     tags={p.data.tags}
                     demo={p.data.demo}
                     code={p.data.code}
+                    store={p.data.store}
                   />
                 ))}
             </div>

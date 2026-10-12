@@ -2,8 +2,8 @@
 title: "ThingsNode MCP Server"
 summary: "MCP server for the ThingsBoard IoT platform with custom tools, so AI assistants can work with devices and telemetry."
 tags: ["Java", "MCP", "ThingsBoard", "Docker", "IoT"]
-order: 6
-featured: true
+order: 8
+featured: false
 demo: "https://thingsnode-mcp.vercel.app"
 code: "https://github.com/duelHunter/thingsnode-mcp"
 ---
