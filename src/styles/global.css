@@ -997,11 +997,42 @@ section {
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: clamp(1.25rem, 5.5vw, 2rem);
+        overflow-wrap: anywhere;
     }
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        gap: 2rem;
+    }
+
+    .contact-content > *,
+    .contact-details {
+        min-width: 0;
+    }
+
+    .contact-details a {
+        overflow-wrap: anywhere;
+    }
+
+    .contact-item {
+        padding: 1.25rem;
+        gap: 1rem;
+    }
+
+    .project-links {
+        flex-wrap: wrap;
+    }
+
+    .detail-title {
+        overflow-wrap: anywhere;
+    }
+
+    .scroll-indicator {
+        display: none;
     }
 
     .skills-grid {
@@ -1020,8 +1051,30 @@ section {
 @media (max-width: 480px) {
     .hero-name {
         font-size: 2rem;
+        overflow-wrap: anywhere;
     }
 
+    .hero-subtitle {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-tagline {
+        font-size: 0.85rem;
+    }
+
+    .about-text-box {
+        padding: 1.25rem;
+    }
+
+    .system-status-box {
+        padding: 2rem 1rem;
+    }
+
+    .status-text-large {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
 }
 /* Project cards: title link */
 .project-title-link {
